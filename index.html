@@ -7,23 +7,31 @@
 </head>
 
 <body>
-  <section>
-    <h1>Current temperature: <span id="current-temperature"></span></h1>
-    <form id="select-city">
-      <input id="current-city" type="text" placeholder="Enter a city"></input>
-      <input type="submit"></input>
-    </form>
-    </select>
-    <h2 id="temperature"></h2>
-    <p>
-      <button id="temperature-up">+</button>
-      <button id="temperature-down">-</button>
-      <button id="temperature-reset">reset</button>
-      Power saving mode is <span id="power-saving-status"></span>
-      <button id="powersaving-on">PSM on</button>
-      <button id="powersaving-off">PSM off</button>
-    </p>
-  </section>
+  <div id='main' class='container'>
+    <section class='fancy'>
+      <h1>Current temperature: <span id="current-temperature"></span></h1>
+      <form id="select-city">
+        <input id="current-city" type="text" placeholder="Enter a city"></input>
+        <input type="submit"></input>
+      </form>
+      </select>
+      <h2 id="temperature"></h2>
+      <div class='buttons'>
+        <p>
+          <div class="plusandminusbuttons">
+            <button id="temperature-up">+</button>
+            <button id="temperature-down">-</button><br />
+          </div>
+          <button id="temperature-reset">reset</button><br />
+          Power saving mode is <span id="power-saving-status"></span><br />
+          <div class="PSMbuttons">
+            <button id="powersaving-on">PSM on</button>
+            <button id="powersaving-off">PSM off</button>
+          </div>
+        </p>
+      </div>
+    </section>
+  </div>
   <!-- <a href="http://jquery.com/">jQuery</a> -->
   <script src="jquery.js"></script>
   <script src="src/interface.js"></script>
